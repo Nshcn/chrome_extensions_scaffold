@@ -8,5 +8,20 @@ export default defineManifest({
   action: {
     default_popup: 'index.html'
   },
-  permissions: []
+  background: {
+    service_worker: 'src/background/index.ts',
+    type: 'module'
+  },
+  permissions: [
+    'notifications'
+  ],
+  icons: {
+    "16": "assets/icon-16.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  web_accessible_resources: [{
+    resources: ['assets/*'],
+    matches: ['<all_urls>']
+  }]
 }); 

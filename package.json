@@ -1,6 +1,6 @@
 {
   "name": "create-chrome-ext-app",
-  "version": "1.0.5",
+  "version": "1.0.11",
   "description": "CLI tool for creating Chrome extensions with Vite and TypeScript",
   "type": "module",
   "bin": {
